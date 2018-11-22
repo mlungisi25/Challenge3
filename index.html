@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+<h2>JavaScript Challenges </h2>
+
+<p>Return the largest number</p>
+
+<input id="num1" type="number">
+<br><br>
+
+<input id="num2" type="number" >
+<br><br>
+
+<input id="num3" type="number" >
+<br><br>
+
+<button type="button" onclick="maxNum()">try</button>
+
+<p id="max"></p>
+</center>
+<script>
+//area of a triangle
+function maxNum() {
+
+    var a,b,c;
+	
+	
+    // Get the value of the input field with id
+    sd1 = document.getElementById("num1").value;
+    sd2 = document.getElementById("num2").value;
+	sd3 = document.getElementById("num3").value
+	
+	var maxValue;
+	
+	if(sd1>sd2 && sd1>sd3)
+		{
+			maxValue =sd1+": is largest ";
+								
+
+		}
+		else if(sd2>sd1 && sd2>sd3)
+		{
+			maxValue =sd2+": is largest ";
+								
+		}
+		else if(sd3>sd1 && sd3>sd1)
+		{
+					
+			maxValue = sd3+": is largest ";
+		}
+
+   document.getElementById("max").innerHTML = maxValue;
+
+}
+</script>
+</body>
+</html>
